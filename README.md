@@ -20,5 +20,33 @@
 npm install random-stuff-api
 ```
 
-### Functions
+## Declaration
+```javascript
+const api = require('random-stuff-api')
+```
 
+## Functions
+```javacrpt
+api.joke() // Returns a dad joke
+api.cnjoke() // Returns a cn joke
+api.devjoke() // Returns a dev joke
+api.insult() // returns a random insult 
+api.vase() // returns a vase image 
+api.cat() // returns a cat image 
+api.dog() // returns a dog image 
+api.duck() // returns a duck image 
+api.aww() // returns a cute moment or picture 
+api.meme() // returns a cool meme :)
+api.dankmeme() // returns a dank meme :o
+api.facepalm() // returns a facepalm moment
+```
+
+## Usage Example
+```javascript
+const api = require('random-sutff-api')
+api.insult()
+// Random Output =>
+/* "We all sprang from apes, but you didn't spring far enough." */
+```
+## Support
+For support [Discord server](https://pgamerx.com/discord)
