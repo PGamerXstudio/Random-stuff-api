@@ -10,3 +10,15 @@
 <a href="https://www.npmjs.com/package/random-stuff-api">
 <img src="https://img.shields.io/npm/v/random-stuff-api?color=red&label=Version&logo=npm&style=for-the-badge" alt="Npm version">
 </a>
+
+## Requirments
+* Nodejs Version 12.0.0 or above
+* developer/build tools
+
+## Installation
+```
+npm install random-stuff-api
+```
+
+### Functions
+
