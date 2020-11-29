@@ -1,6 +1,4 @@
 # Random-stuff-api
-## The all in one API
-
 <a href="https://discord.gg/y94PA8d">
 <img src="https://img.shields.io/discord/690557545965813770?color=7289DA&label=Support&logo=discord&style=for-the-badge" alt="Discord">
 </a>
