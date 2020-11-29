@@ -42,7 +42,7 @@ api.facepalm() // returns a facepalm moment
 
 ## Usage Example
 ```javascript
-const api = require('random-sutff-api')
+const api = require('random-stuff-api')
 api.insult()
 // Random Output =>
 /* "We all sprang from apes, but you didn't spring far enough." */
