@@ -7,16 +7,23 @@
 <img src="https://img.shields.io/npm/dw/random-stuff-api?color=CC3534&logo=npm&style=for-the-badge" alt="Downloads">
 </a>
 
+
 <a href="https://www.npmjs.com/package/random-stuff-api">
 <img src="https://img.shields.io/npm/v/random-stuff-api?color=red&label=Version&logo=npm&style=for-the-badge" alt="Npm version">
 </a>
+
 <a href="https://github.com/pgamerxstudio/random-stuff-api">
 <img src="https://img.shields.io/github/stars/pgamerxstudio/random-stuff-api?color=333&logo=github&style=for-the-badge" alt="Github stars">
 </a>
 
 <a href="https://github.com/pgamerxstudio/random-stuff-api/blob/master/LICENSE">
 <img src="https://img.shields.io/github/license/pgamerxstudio/random-stuff-api?color=6e5494&logo=github&style=for-the-badge" alt="License">
-</a>
+</a>    <a href="https://www.npmjs.com/package/random-stuff-api>
+    <img src="https://img.shields.io/npm/v/random-stuff-api.svg">
+  </a>
+
+
+
 
 ## Requirments
 * Nodejs Version 12.0.0 or above
