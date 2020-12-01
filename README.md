@@ -7,23 +7,16 @@
 <img src="https://img.shields.io/npm/dw/random-stuff-api?color=CC3534&logo=npm&style=for-the-badge" alt="Downloads">
 </a>
 
-
 <a href="https://www.npmjs.com/package/random-stuff-api">
 <img src="https://img.shields.io/npm/v/random-stuff-api?color=red&label=Version&logo=npm&style=for-the-badge" alt="Npm version">
 </a>
-
 <a href="https://github.com/pgamerxstudio/random-stuff-api">
 <img src="https://img.shields.io/github/stars/pgamerxstudio/random-stuff-api?color=333&logo=github&style=for-the-badge" alt="Github stars">
 </a>
 
 <a href="https://github.com/pgamerxstudio/random-stuff-api/blob/master/LICENSE">
 <img src="https://img.shields.io/github/license/pgamerxstudio/random-stuff-api?color=6e5494&logo=github&style=for-the-badge" alt="License">
-</a>    <a href="https://www.npmjs.com/package/random-stuff-api>
-    <img src="https://img.shields.io/npm/v/random-stuff-api.svg">
-  </a>
-
-
-
+</a>
 
 ## Requirments
 * Nodejs Version 12.0.0 or above
@@ -34,13 +27,13 @@
 npm install random-stuff-api
 ```
 
-## Change Log
-### Version 5x
-Added 4 new functions - 
-* api.aww() // returns a cute moment or picture 
-* api.meme() // returns a cool meme :)
-* api.dankmeme() // returns a dank meme :o
-* api.facepalm() // returns a facepalm moment
+## Recent Changes
+### Version 7.x
+ Added 4 new functions - 
+* api.hpmeme() // returns a harry potter meme
+* api.wholesome() // returns a wholesome meme 
+* api.art() // returns cool art pic
+* api.deadinside() // returns a "Watch people die inside" moment
 
 ## Declaration
 ```javascript
@@ -61,6 +54,10 @@ api.aww() // returns a cute moment or picture
 api.meme() // returns a cool meme :)
 api.dankmeme() // returns a dank meme :o
 api.facepalm() // returns a facepalm moment
+api.hpmeme() // returns a harry potter meme
+api.wholesome() // returns a wholesome meme 
+api.art() // returns cool art pic
+api.deadinside() // returns a "Watch people die inside" moment
 ```
 
 ## Usage Example
