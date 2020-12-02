@@ -28,14 +28,15 @@ npm install random-stuff-api
 ```
 
 ## Recent Changes
-### Version 8.x
+### Version 8.5.x
 Added Classes!
 * Now the api has been made arranged into classes
-* There are currently 2 classes - 
+* There are currently 3 classes - 
   * random // used for functions which has a random response as output (for eg - joke , insult)
   * image // Used for functions which has image as an output (for eg - dog , cat)
-* For eg - Now to get a joke you will do api.random.joke()     
-**Scroll down for all functions explained**
+  * canva // for image manipulation and has only 3 functions atm 
+* Added Image manipulation (it may not work)
+  * For eg - api.canva.blur(image) // scroll down for examples
 
 ## Declaration
 ```javascript
@@ -43,10 +44,10 @@ const api = require('random-stuff-api')
 ```
 
 ## Classes
-Currently there are currently 2 classes and both classes have a lot of functions each 
-Classes are - 
+Currently there are currently 3 classes - 
 * random // used for functions which has a random response as output (for eg - joke , insult)
 * image // Used for functions which has image as an output (for eg - dog , cat)     
+* canva // for image manipulation and has only 3 functions atm 
 **(Scroll down for all functions and example)**
 
 ## Usage Example
@@ -58,9 +59,22 @@ api.random.insult()
     console.log(insult)
   })
   //Output => What's the difference between you and eggs? Eggs get laid and you don't.
+
+// ANOTHER ONE
+
+const image = getimagesomehow()
+api.canva.blue(image)
+  .then(buffer => {
+    api.canva.write(buffer, "./blur.gif");
+  })
+  .catch(console.error);
 ```
 
 ## Functions
+### Class canva
+* `api.canva.blur() // blurs the image`
+* `api.canva.delete() // the delete memey thingy`
+* `api.canva.write() // to save The image`
 ### Class random
 * `api.random.joke() // Returns a dad joke`
 * `api.random.cnjoke() // Returns a cn joke`
