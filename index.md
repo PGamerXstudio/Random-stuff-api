@@ -3,11 +3,18 @@
 </a>
 
 <a href="https://www.npmjs.com/package/random-stuff-api">
-<img src="https://img.shields.io/npm/dw/random-stuff-api?color=CC3534&logo=npm&style=for-the-badge" alt="Downloads">
+<img src="https://img.shields.io/npm/dt/random-stuff-api?color=CC3534&logo=npm&style=for-the-badge" alt="Downloads">
 </a>
 
 <a href="https://www.npmjs.com/package/random-stuff-api">
 <img src="https://img.shields.io/npm/v/random-stuff-api?color=red&label=Version&logo=npm&style=for-the-badge" alt="Npm version">
+</a>
+<a href="https://github.com/pgamerxstudio/random-stuff-api">
+<img src="https://img.shields.io/github/stars/pgamerxstudio/random-stuff-api?color=333&logo=github&style=for-the-badge" alt="Github stars">
+</a>
+
+<a href="https://github.com/pgamerxstudio/random-stuff-api/blob/master/LICENSE">
+<img src="https://img.shields.io/github/license/pgamerxstudio/random-stuff-api?color=6e5494&logo=github&style=for-the-badge" alt="License">
 </a>
 
 ## Requirments
@@ -19,33 +26,72 @@
 npm install random-stuff-api
 ```
 
+## Recent Changes
+### Version 8.5.x
+Added Classes!
+* Now the api has been made arranged into classes
+* There are currently 3 classes - 
+  * random // used for functions which has a random response as output (for eg - joke , insult)
+  * image // Used for functions which has image as an output (for eg - dog , cat)
+  * canva // for image manipulation and has only 3 functions atm 
+* Added Image manipulation (it may not work)
+  * For eg - api.canva.blur(image) // scroll down for examples
+
 ## Declaration
 ```javascript
 const api = require('random-stuff-api')
 ```
 
-## Functions
-```javacrpt
-api.joke() // Returns a dad joke
-api.cnjoke() // Returns a cn joke
-api.devjoke() // Returns a dev joke
-api.insult() // returns a random insult 
-api.vase() // returns a vase image 
-api.cat() // returns a cat image 
-api.dog() // returns a dog image 
-api.duck() // returns a duck image 
-api.aww() // returns a cute moment or picture 
-api.meme() // returns a cool meme :)
-api.dankmeme() // returns a dank meme :o
-api.facepalm() // returns a facepalm moment
-```
+## Classes
+Currently there are currently 3 classes - 
+* random // used for functions which has a random response as output (for eg - joke , insult)
+* image // Used for functions which has image as an output (for eg - dog , cat)     
+* canva // for image manipulation and has only 3 functions atm 
+**(Scroll down for all functions and example)**
 
 ## Usage Example
+
 ```javascript
 const api = require('random-stuff-api')
-api.insult()
-// Random Output =>
-/* "We all sprang from apes, but you didn't spring far enough." */
+api.random.insult()
+  .then(insult => {
+    console.log(insult)
+  })
+  //Output => What's the difference between you and eggs? Eggs get laid and you don't.
+
+// ANOTHER ONE
+
+const image = getimagesomehow()
+api.canva.blue(image)
+  .then(buffer => {
+    api.canva.write(buffer, "./blur.gif");
+  })
+  .catch(console.error);
 ```
+
+## Functions
+### Class canva
+* `api.canva.blur() // blurs the image`
+* `api.canva.delete() // the delete memey thingy`
+* `api.canva.write() // to save The image`
+### Class random
+* `api.random.joke() // Returns a dad joke`
+* `api.random.cnjoke() // Returns a cn joke`
+* `api.random.devjoke() // Returns a dev joke`
+* `api.random.insult() // returns a random insult`
+### Class Image
+* `api.image.vase() // returns a vase image` 
+* `api.image.cat() // returns a cat image `
+* `api.image.dog() // returns a dog image `
+* `api.image.duck() // returns a duck image` 
+* `api.image.aww() // returns a cute moment`
+* `api.image.meme() // returns a cool meme :)`
+* `api.image.dankmeme() // returns a dank meme :o`
+* `api.image.facepalm() // returns a facepalm moment`
+* `api.image.hpmeme() // returns a harry potter meme`
+* `api.image.wholesome() // returns a wholesome meme `
+* `api.image.art() // returns cool art pic`
+* `api.image.deadinside() // returns a "Watch people die inside" moment`
+
 ## Support
 For support [Discord server](https://pgamerx.com/discord)
