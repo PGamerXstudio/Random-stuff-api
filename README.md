@@ -28,15 +28,13 @@ npm install random-stuff-api
 ```
 
 ## Recent Changes
-### Version 8.5.x
-Added Classes!
-* Now the api has been made arranged into classes
-* There are currently 3 classes - 
-  * random // used for functions which has a random response as output (for eg - joke , insult)
-  * image // Used for functions which has image as an output (for eg - dog , cat)
-  * canva // for image manipulation and has only 3 functions atm 
-* Added Image manipulation (it may not work)
-  * For eg - api.canva.blur(image) // scroll down for examples
+### Version 9.x
+Added -
+* `api.canva.rainbow // rainbow effect`
+* `api.canva.circle // provides circular version of image`
+* `api.canva.sharp // sharpens the image`
+* `api.canva.burn // burn effect on image`
+* `api.canva.pixelate // pixelates the image` 
 
 ## Declaration
 ```javascript
@@ -47,7 +45,7 @@ const api = require('random-stuff-api')
 Currently there are currently 3 classes - 
 * random // used for functions which has a random response as output (for eg - joke , insult)
 * image // Used for functions which has image as an output (for eg - dog , cat)     
-* canva // for image manipulation and has only 3 functions atm 
+* canva // for image manipulation 
 **(Scroll down for all functions and example)**
 
 ## Usage Example
@@ -63,9 +61,9 @@ api.random.insult()
 // ANOTHER ONE
 
 const image = getimagesomehow()
-api.canva.blue(image)
+api.canva.pixelate(image)
   .then(buffer => {
-    api.canva.write(buffer, "./blur.gif");
+    api.canva.write(buffer, "./pixelate.png");
   })
   .catch(console.error);
 ```
@@ -74,7 +72,13 @@ api.canva.blue(image)
 ### Class canva
 * `api.canva.blur() // blurs the image`
 * `api.canva.delete() // the delete memey thingy`
+* `api.canva.rainbow // rainbow effect`
+* `api.canva.circle // provides circular version of image`
+* `api.canva.sharp // sharpens the image`
+* `api.canva.burn // burn effect on image`
+* `api.canva.pixelate // pixelates the image` 
 * `api.canva.write() // to save The image`
+
 ### Class random
 * `api.random.joke() // Returns a dad joke`
 * `api.random.cnjoke() // Returns a cn joke`
